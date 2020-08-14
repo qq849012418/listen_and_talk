@@ -21,5 +21,5 @@ Python版本代码见`scripts/`下。
 $ rosrun listen_and_talk node_template.py   
 ```
 ## 效果
-![](https://keenster-1300019754.cos.ap-shanghai-fsi.myqcloud.com/2020-08-14 20-00-35屏幕截图.png)
+![](https://keenster-1300019754.cos.ap-shanghai-fsi.myqcloud.com/2020-08-14-20-00-35屏幕截图.png)
 
