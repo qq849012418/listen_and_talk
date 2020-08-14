@@ -1,6 +1,6 @@
-# topic_demo
+# Listen_and_talk
 
-topic_demo软件包，包括C++与Python两个版本的Topic通信的示例。
+简单整合了一个ros_demo软件包，满足单节点双Topic的要求. python版本。
 
 ## 功能介绍
 
@@ -10,23 +10,15 @@ Topic的接受者会订阅**/gps_info**，并计算每次GPS位置到原点的�
 
 本例需要自定义msg文件，见[msg/gps.msg](./msg/gps.msg)。
 
-Python版本代码见`scripts/`下的[pytalker.py](./scripts/pytalker.py)和[pylistener.py](./scripts/pylistener.py)。
+Python版本代码见`scripts/`下。
 
 
 ## 运行方法
 
-启动发布者
+启动发布与接收者
 
 ```sh
-$ rosrun topic_demo pytalker.py   #Python
-$ rosrun topic_demo talker        #C++
-``` 
+$ rosrun listen_and_talk node_template.py   
+```
 
-启动接收者
 
-```sh
-$ rosrun topic_demo pylistener.py   #Python
-$ rosrun topic_demo listener        #C++
-``` 
-
-msg是与编程语言无关的通信协议，因此收发双方无论用哪个语言来实现，都可以实现相互的topic通信。
